@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "elso-ten-verz"
+    }
+  },
+  "defaultProject": "elso-ten-verz",
+  "cli": {
+    "analytics": "deae66b9-2e42-4869-b606-127b19b2311b"
+  }
 }
