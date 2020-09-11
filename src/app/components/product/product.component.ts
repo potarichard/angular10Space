@@ -1,3 +1,4 @@
+import { hasLifecycleHook } from '@angular/compiler/src/lifecycle_reflector';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +10,16 @@ export class ProductComponent implements OnInit {
 
   constructor() { }
 
+  message:string = "Hello";
+
   ngOnInit(): void {
+  }
+
+  toggleMessage() {
+    if(this.message === "Hello")
+      this.message = "ByeBye";
+    else if(this.message === "ByeBye")
+      this.message = "Hello";
   }
 
 }

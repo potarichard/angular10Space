@@ -1,6 +1,14 @@
-<p>user works!</p>
+<p>Main component</p>
 
 <button (click)="html_addOneUser()">Add</button>
 <button (click)="html_getOneUser()">Get</button>
 <button (click)="html_patchOneUser()">Patch</button>
 <button (click)="html_deleteOneUser()">Delete</button>
+
+<br>
+<input type="text" #inc_1> Hello I'm input comp
+<app-product #prod_1></app-product>
+<app-product *ngFor="let num of just_nums" #prods></app-product>
+
+<br>
+<button (click)="html_logElements()">Log elements</button>
