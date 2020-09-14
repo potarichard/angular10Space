@@ -11,8 +11,18 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
   message:string = "Hello";
+  countClicks: number;
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.countClicks = 0;
+  }
+
+  addClick(){
+    this.countClicks++;
+  }
+
+  removeClick(){
+    this.countClicks--;
   }
 
   toggleMessage() {

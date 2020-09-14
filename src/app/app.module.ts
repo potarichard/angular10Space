@@ -17,7 +17,7 @@ import { OrderComponent } from './components/order/order.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]

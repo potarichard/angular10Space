@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
-  private URL:string = environment.baseURL + "/users";
+  URL:string = environment.baseURL + "/users";
 
   private headers:HttpHeaders = new HttpHeaders({ 'Content-Type':'application/json',
                                                   'Macska':'DioJojo'});

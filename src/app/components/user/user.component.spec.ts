@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { UserService } from 'src/app/services/user.service';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import {HttpClientModule} from '@angular/common/http';
 import { UserComponent } from './user.component';
 
 describe('UserComponent', () => {
@@ -8,7 +10,9 @@ describe('UserComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserComponent ]
+      imports:[HttpClientTestingModule],
+      declarations: [ UserComponent ],
+      providers:[UserService]
     })
     .compileComponents();
   });
@@ -22,4 +26,8 @@ describe('UserComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // create spyobject, mock service!
+
+
 });
